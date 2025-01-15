@@ -25,15 +25,15 @@ nav {
 }
 
 nav a {
-  color: #0056b3;
+  color: #e46615;
   text-decoration: none;
   font-weight: bold;
   margin: 0 1rem;
 }
 
 nav a:hover {
-  color: #003580;
-  text-decoration: underline;
+  color: #813b0e;
+  text-decoration: bold;
 }
 
 main {
