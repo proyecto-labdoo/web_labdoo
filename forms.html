@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulari d'Infraestructures</title>
 </head>
-<body>
-    <h1>Formulario</h1>
 
+<body>
+	<header>
+    	<h1>Formulari de Petició d'Infraestructures</h1>
+	</header>
+    
     <nav>
-	<a href="index.html">Home</a> |
-        <a href="presupuesto.html">Presupuesto</a> |
-        <a href="forms.html">Formulario</a> 
+		<a href="index.html"><b>Home</b></a> |
+        <a href="presupuesto.html"><b>Presupuesto</b></a> |
+        <a href="forms.html"><b>Formulario</b></a> 
     </nav>
     
-    <p>This is the home page.</p>
+    <p> </p>
+    
+    <form action="/submit-request" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="cognoms">Cognoms:</label>
+        <input type="text" id="cognoms" name="cognoms" required><br><br>
+
+        <label for="telefon">Telèfon:</label>
+        <input type="tel" id="telefon" name="telefon" required><br><br>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="ordinadors">Número d'ordinadors:</label>
+        <input type="number" id="ordinadors" name="ordinadors" min="1" required><br><br>
+
+        <label>Tipus de connexió:</label><br>
+        <input type="radio" id="cable" name="connexio" value="cable" required>
+        <label for="cable">Per cable</label><br>
+        <input type="radio" id="wifi" name="connexio" value="wifi">
+        <label for="wifi">Wi-Fi</label><br>
+        <input type="radio" id="ambdues" name="connexio" value="ambdues">
+        <label for="ambdues">Ambdues</label><br><br>
+
+        <label for="sales">Número de sales:</label>
+        <select id="sales" name="sales" required>
+            <option value="">Selecciona</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br><br>
+
+        <label for="comentaris">Comentaris (opcional):</label>
+        <textarea id="comentaris" name="comentaris"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
