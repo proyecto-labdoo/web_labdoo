@@ -101,3 +101,27 @@ footer {
   width: 100%;
 }
 
+.contenedor {
+    text-align: center;
+}
+
+
+.boton {
+    display: block;
+    width: 350px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: rgb(46, 99, 212);
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+.boton:hover {
+    background-color: darkblue;
+}
+
