@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
-    <title>Formulari d'Infraestructures</title>
+    <title>Formulario de Infraestructuras</title>
 </head>
 
 <body>
@@ -21,34 +21,34 @@
         <a href="forms.html"><b>Formulario</b></a> 
     </nav>
     
-    <p> </p>
     
+   <div id="cuadrado">
     <!-- Formulario corregido -->
-    <form action="https://formspree.io/f/mrbegyoy" method="post">
-        <label for="nom">Nom:</label>
-        <input type="text" id="nom" name="nom" required><br><br>
+      <form action="https://formspree.io/f/mrbegyoy" method="post">
+          <label for="nom">*Nombre:</label>
+          <input type="text" id="nom" name="nom" required><br><br>
 
-        <label for="cognoms">Cognoms:</label>
-        <input type="text" id="cognoms" name="cognoms" required><br><br>
+          <label for="cognoms">*Apellidos:</label>
+          <input type="text" id="cognoms" name="cognoms" required><br><br>
 
-        <label for="telefon">Telèfon:</label>
-        <input type="tel" id="telefon" name="telefon" required><br><br>
+          <label for="telefon">*Telefono:</label>
+          <input type="tel" id="telefon" name="telefon" required><br><br>
 
-        <label for="email">Correu electrònic:</label>
+        <label for="email">*Correo electronico:</label>
         <input type="email" id="email" name="_replyto" required><br><br>
 
-        <label for="ordinadors">Número d'ordinadors:</label>
+        <label for="ordinadors">*Numero de ordenadores:</label>
         <input type="number" id="ordinadors" name="ordinadors" min="1" required><br><br>
 
-        <label>Tipus de connexió:</label><br>
+        <label>*Tipo de conexión:</label><br>
         <input type="radio" id="cable" name="connexio" value="cable" required>
-        <label for="cable">Per cable</label><br>
+        <label for="cable">Por cable</label><br>
         <input type="radio" id="wifi" name="connexio" value="wifi">
         <label for="wifi">Wi-Fi</label><br>
         <input type="radio" id="ambdues" name="connexio" value="ambdues">
-        <label for="ambdues">Ambdues</label><br><br>
+        <label for="ambdues">Las dos</label><br><br>
 
-        <label for="sales">Número de sales:</label>
+        <label for="sales">*Numero de salas:</label>
         <select id="sales" name="sales" required>
             <option value="">Selecciona</option>
             <option value="1">1</option>
@@ -63,10 +63,15 @@
             <option value="10">10</option>
         </select><br><br>
 
-        <label for="comentaris">Comentaris (opcional):</label>
+        <label for="comentaris">Comentarios:</label>
+        <p></p>
         <textarea id="comentaris" name="comentaris"></textarea><br><br>
 
-        <button type="submit">Enviar</button>
+        <button id="enviar" type="submit">Enviar</button>
     </form>
+  </div>
+  <div>
+    <p> </p>
+  </div>
 </body>
 </html>
