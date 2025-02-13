@@ -1,1 +1,51 @@
+	<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labdoo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    		<img id="logo" src="images/labdoo.png" width="280" height="100">
+	</header>
+    
+    <nav>
+        <a href="index.html"><b>Home</b></a> |
+        <a href="fase1.html"><b>Fase 1</b></a> |
+        <a href="fase2.html"><b>Fase 2</b></a> |
+        <a href="presupuesto.html"><b>Presupuesto</b></a> |
+        <a href="forms.html"><b>Formulario</b></a>
+    </nav>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 1 - Elección de la infraestructura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reto 1 - Elección de la infraestructura</h1>
+    </header>
+    <main>
+        <section>
+            <p>Para la conexión de los switches que interconectan las 5 clases del centro, se ha optado por una topología de anillo, mientras que para la conexión de los switches con los ordenadores se ha decidido implementar una topología en estrella. Esta combinación de topologías responde a la necesidad de una infraestructura de red eficiente, escalable y fácil de gestionar, adaptándose tanto a las características del centro educativo como a las necesidades operativas de los usuarios.</p>
+        </section>
 
+        <section>
+            <h2>Elección de la topología de anillo entre los switches</h2>
+            <p>La topología de anillo se ha seleccionado para la interconexión de los switches que dan servicio a las distintas clases debido a varias ventajas clave que ofrece en términos de redundancia y resiliencia. En una red en anillo, los switches están conectados entre sí formando un bucle cerrado, lo que permite que, en caso de que un enlace o switch falle, el tráfico de datos pueda ser redirigido en la dirección opuesta, asegurando la continuidad del servicio sin interrupciones significativas. Esta característica es fundamental para mantener la red en funcionamiento de manera estable, especialmente en un entorno educativo donde la conectividad constante es crucial.</p>
+            <p>Además, la topología de anillo es fácilmente escalable. A medida que el centro educativo crece o se agregan más switches, la red puede expandirse sin grandes complicaciones, manteniendo la misma estructura de conexión. Esta escalabilidad permite adaptar la infraestructura a futuras necesidades sin necesidad de realizar cambios importantes en la configuración.</p>
+        </section>
+
+        <section>
+            <h2>Elección de la topología en estrella entre los switches y los ordenadores</h2>
+            <p>Por otro lado, la elección de la topología en estrella para la conexión de los switches a los ordenadores responde a la necesidad de simplicidad y eficiencia en la gestión de los dispositivos finales. En una topología en estrella, cada ordenador está conectado directamente a un switch central, lo que facilita tanto el mantenimiento como la resolución de problemas. Si un ordenador presenta un fallo, este no afectará al resto de los dispositivos en la red, ya que las conexiones son independientes. Esto reduce significativamente los tiempos de inactividad y mejora la experiencia de los usuarios.</p>
+            <p>La topología en estrella también optimiza el rendimiento de la red. Al asignar un enlace dedicado entre cada ordenador y su switch correspondiente, se minimizan los posibles conflictos de tráfico, lo que se traduce en una comunicación más rápida y eficiente entre los dispositivos. Esta estructura es especialmente útil en redes donde el tráfico es constante y se necesita un rendimiento predecible.</p>
+            <p>Además, la topología en estrella es fácil de expandir. Si en el futuro se añaden más ordenadores, basta con conectar nuevos dispositivos a un switch adicional, sin necesidad de modificar las conexiones existentes. Esto proporciona una flexibilidad considerable, tanto a corto como a largo plazo.</p>
+        </section>
+    </main>
+   
