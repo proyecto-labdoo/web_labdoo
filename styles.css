@@ -191,7 +191,6 @@ header h1 {
     font-size: 2.5rem;
 }
 
-/* Estilo de los secciones */
 section {
     margin-bottom: 20px;
 }
@@ -207,27 +206,9 @@ p {
     margin-bottom: 10px;
 }
 
-/* Estilo del pie de página */
 footer {
     text-align: center;
     font-size: 1rem;
     color: #555;
     margin-top: 30px;
 }
-
-/* Responsive para pantallas pequeñas */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-}
-
-  
